@@ -51,7 +51,6 @@ namespace StudentGrading
     
     public static class Program
     {
-        // example path on Mac: /Users/usr/ETEA2E_Project/StudentGrading/Subject/English.txt
         private static readonly string HomeDirectory = Environment.GetFolderPath(Environment.SpecialFolder.UserProfile);
         private static readonly string? ProjectFolder = Directory.GetParent(Directory.GetCurrentDirectory())?.Name;
         public static readonly string BaseDirectory = Path.Combine(HomeDirectory, ProjectFolder ?? string.Empty, "StudentGrading", "Subjects");
